@@ -21,6 +21,7 @@
             android:id="@+id/imageButton_featurePopupBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="0"
             android:padding="10dp"
             android:src="@drawable/ic_arrow_back_black_24dp"
             android:background="@android:color/transparent"
@@ -30,8 +31,19 @@
             android:id="@+id/bottomSheetHeading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:onClick="bottomSheetHeading_onClick"
             android:textAppearance="@android:style/TextAppearance.Large.Inverse" />
+        <ImageButton
+            android:id="@+id/imageButton_featurePopupEditGeometry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:padding="10dp"
+            android:src="@drawable/ic_edit_location_black_24dp"
+            android:background="@android:color/transparent"
+            android:onClick="imageButton_featurePopupEditGeometry_onClick"
+            android:contentDescription="@string/edit_geometry"/>
     </LinearLayout>
 
     <LinearLayout

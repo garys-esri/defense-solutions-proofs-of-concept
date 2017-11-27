@@ -1,0 +1,6 @@
+[submodule "source/military-apps-library-java"]
+	path = source/military-apps-library-java
+	url = https://github.com/Esri/military-apps-library-java.git
+[submodule "source/aFileChooser"]
+	path = source/aFileChooser
+	url = https://github.com/garys-esri/aFileChooser.git

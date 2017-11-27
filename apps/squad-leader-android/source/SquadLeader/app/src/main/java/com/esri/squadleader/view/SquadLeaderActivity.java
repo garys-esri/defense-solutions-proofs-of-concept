@@ -1239,6 +1239,21 @@ public class SquadLeaderActivity extends AppCompatActivity
         return ret;
     }
 
+    public void imageButton_featurePopupEditGeometry_onClick(View view) {
+        if (null != popupContainer) {
+            final Popup currentPopup = popupContainer.getCurrentPopup();
+            if (null != currentPopup) {
+                final Feature feature = currentPopup.getFeature();
+                if (null != feature) {
+                    final Geometry geometry = feature.getGeometry();
+                    if (null != geometry) {
+                        Snackbar.make(findViewById(android.R.id.content), "TODO edit geometry " + geometry.toString(), Snackbar.LENGTH_SHORT).show();
+                    }
+                }
+            }
+        }
+    }
+
     public void bottomSheetHeading_onClick(View view) {
         if (BottomSheetBehavior.STATE_COLLAPSED == bottomSheetBehavior_featurePopups.getState()) {
             bottomSheetBehavior_featurePopups.setState(BottomSheetBehavior.STATE_EXPANDED);
